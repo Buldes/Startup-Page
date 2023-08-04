@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
+import { GoogleSearchBar } from './Components/GoogleSearch';
 
 function App() {
+  useEffect(() => {
+    document.title = "Startup Page";})
+
   return (
-    <div className="App">
-      <h>Funktioniert</h>
+    <div style={{position:'relative', top:"10px"}}>
+      <GoogleSearchBar left={10}/>
     </div>
   );
 }
