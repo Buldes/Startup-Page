@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { GoogleSearchBar } from './Components/GoogleSearch';
+import { LinkButton } from './Components/LinkButtons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   useEffect(() => {
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <div style={{position:'relative', top:"10px"}}>
-      <GoogleSearchBar left={10}/>
+      <LinkButton icon={faGithub}/>
+  
     </div>
   );
 }
