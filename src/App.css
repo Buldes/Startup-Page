@@ -46,3 +46,17 @@ input:focus {
   outline: none; /* Entfernt die standardmäßige Umrandung */
   /* Weitere Stile hier hinzufügen, um den Fokus visuell anzupassen */
 }
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Damit das Video hinter dem restlichen Inhalt bleibt */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
