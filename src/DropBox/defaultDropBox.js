@@ -3,7 +3,8 @@ import { defaultTextSytle } from "../Styles/TextStyles";
 import { bgColor2e } from "../Styles/backGroundColor";
 
 export function DefaultDropBox(props){
-    const {fontSize=15, backgroundColor=bgColor2e, borderColor=backgroundColor, borderRadius="5px",height=25} = props
+    const {fontSize=15, backgroundColor=bgColor2e, borderColor=backgroundColor, borderRadius="5px",height=30,
+           width=100} = props
     var propsValue = props.options;
     let PropsOptions = []
 
@@ -12,7 +13,7 @@ export function DefaultDropBox(props){
     }
 
     return <select onChange={props.onChange} id={props.id} style={{backgroundColor: backgroundColor, borderColor:borderColor, borderRadius:borderRadius,
-                                                                   width:props.width, height:height, top:props.top, left:props.left, 
+                                                                   width:width, height:height, top:props.top, left:props.left, 
                                                                    position:"relative", fontSize:fontSize, ...Object.assign({}, defaultTextSytle, props.add)}}>
                 {PropsOptions}
           </select>
