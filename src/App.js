@@ -13,7 +13,7 @@ function App() {
     <div>
       <VideoBackground bg={bg1}/>
       <Laptop/>
-      <DefaultDropBox options={["Test1", "test2"]}/>
+      
     </div>
   );
 }
