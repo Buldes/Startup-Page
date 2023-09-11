@@ -3,15 +3,20 @@ import { centering } from "../Styles/Look"
 import { SearchBar } from "./Search"
 import { faGithub, faGoogle, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { LinkButton } from "./LinkButtons"
-import { faPlayCircle, faPlus } from "@fortawesome/free-solid-svg-icons"
-import { FullBackgroundChanger } from "../Background/BackgroundChange"
-
+import { faGear, faPlayCircle, faPlus } from "@fortawesome/free-solid-svg-icons"
+import { IconButton } from "../Buttons/IconButton"
+import VideoBackground from "../Background/Backdorund"
+import bg1 from "../Background/bg1.mp4"
 
 export function Laptop(){
 
+    const videoBG = bg1
+
     return(
         <div>
-            <FullBackgroundChanger/>
+            <IconButton icon={faGear} top={5} left={5} click={() => window.location.href = "/settings"}/>
+            <VideoBackground bg={videoBG}/>
+            
             <div style={{display:"flex", flexDirection:"column", ...centering}}>
                 <SearchBar iColor="#4285F4" top={50} width={500} placeholder="Google suche..."/>
                 <SearchBar icon={faYoutube} iColor="#ff1111" top={60} width={500} placeholder="Youtube suche..." seacrhLink="https://www.youtube.com/results?search_query="/>
