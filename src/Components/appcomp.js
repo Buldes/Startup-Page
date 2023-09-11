@@ -17,7 +17,7 @@ export function Laptop(){
 
     return(
         <div>
-            <IconButton icon={faGear} top={5} left={5} click={() => window.location.href = "/settings"}/>
+            <IconButton icon={faGear} top={5} left={5} click={() => window.location.href = "/Startup-Page/settings"}/>
             <VideoBackground bg={choosen}/>
             
             <div style={{display:"flex", flexDirection:"column", ...centering}}>

@@ -10,20 +10,26 @@ import { RefreshVariable } from './Functions/Datadealer';
 function App() {
   useEffect(() => {document.title = "Startup Page";})
 
-  console.log(defaultHeight)
-
+  // check apect ratio
   if (GetAspectRatio() <= 1){
     setDefaultHeight(10)
   }
-  console.log(defaultHeight)
 
+  //Refresh all variables
   RefreshVariable()
   
+  // Überprüfen, ob die aktuelle URL nicht "website/test" ist
+  if (window.location.pathname !== "/Startup-Page/" && window.location.pathname !== "/Startup-Page/settings") {
+    // Weiterleitung zur Unterseite website/test
+    window.location.href = "/Startup-Page/";
+  }
+  
+
   return (
     <Router>
       <Routes>
-        <Route path="/settings" element={<LaptopSettings/>} />
-        <Route path="/" element={<Laptop/>} />
+        <Route path="/Startup-Page/settings" element={<LaptopSettings/>} />
+        <Route path="/Startup-Page/" element={<Laptop/>} />
       </Routes>
     </Router>
   );

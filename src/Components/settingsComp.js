@@ -10,7 +10,7 @@ export function LaptopSettings(){
 
     return (
         <div style={{width:"100%", height:610, backgroundColor:bgColor1f}}>
-            <IconButton icon={faRightToBracket} top={5} left={5} click={() => window.location.href = "/"}/>
+            <IconButton icon={faRightToBracket} top={5} left={5} click={() => window.location.href = "/Startup-Page/"}/>
 
             <div style={centering}>
                 <Headline text="Background" width={"100%"} top={30} borderRadius={20} height={defaultHeight + 5}/>
