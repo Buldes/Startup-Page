@@ -7,15 +7,18 @@ import { faGear, faPlayCircle, faPlus } from "@fortawesome/free-solid-svg-icons"
 import { IconButton } from "../Buttons/IconButton"
 import VideoBackground from "../Background/Backdorund"
 import bg1 from "../Background/bg1.mp4"
+import bg2 from "../Background/bg2.mp4"
+import { bg } from "../variables/str"
 
 export function Laptop(){
 
-    const videoBG = bg1
+    const backgrondVideos = {lava_ball:bg1, water:bg2}
+    const choosen = backgrondVideos[bg]
 
     return(
         <div>
             <IconButton icon={faGear} top={5} left={5} click={() => window.location.href = "/settings"}/>
-            <VideoBackground bg={videoBG}/>
+            <VideoBackground bg={choosen}/>
             
             <div style={{display:"flex", flexDirection:"column", ...centering}}>
                 <SearchBar iColor="#4285F4" top={50} width={500} placeholder="Google suche..."/>
