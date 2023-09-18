@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { Laptop } from './Components/appcomp';
 import { GetAspectRatio } from './Functions/sceen';
-import { defaultHeight, setDefaultHeight } from './variables/int';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { setDefaultHeight } from './variables/int';
 import { LaptopSettings } from './Components/settingsComp';
 import { RefreshVariable } from './Functions/Datadealer';
+import { menu } from './variables/str';
 
 function App() {
   useEffect(() => {document.title = "Startup Page";})
@@ -18,21 +18,19 @@ function App() {
   //Refresh all variables
   RefreshVariable()
   
-  // Überprüfen, ob die aktuelle URL nicht "website/test" ist
-  if (window.location.pathname !== "/Startup-Page/" && window.location.pathname !== "/Startup-Page/settings") {
-    // Weiterleitung zur Unterseite website/test
-    window.location.href = "/Startup-Page/";
+  // home or settings menu
+  
+  if (menu === "main"){
+    return(
+      <Laptop/>
+    )
+  }
+  else if (menu === "settings"){
+    return(
+      <LaptopSettings/>
+    )
   }
   
-
-  return (
-    <Router>
-      <Routes>
-        <Route path="/Startup-Page/settings" element={<LaptopSettings/>} />
-        <Route path="/Startup-Page/" element={<Laptop/>} />
-      </Routes>
-    </Router>
-  );
 }
 
 export default App;

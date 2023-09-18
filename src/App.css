@@ -38,10 +38,6 @@
 }
 
 
-html {  
-  background-color: rgb(21, 20, 39); /* ändert die Farbe des Hintergrundes */
-}
-
 input:focus {
   outline: none; /* Entfernt die standardmäßige Umrandung */
   /* Weitere Stile hier hinzufügen, um den Fokus visuell anzupassen */

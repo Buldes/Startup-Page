@@ -1,4 +1,4 @@
-import { setBGValue, bg } from "../variables/str";
+import { setBGValue, bg, setMenu, menu, bgColor, setBGColor } from "../variables/str";
 
 export function RefreshVariable(){
     // BGValue
@@ -9,8 +9,25 @@ export function RefreshVariable(){
         console.log("saving...")
     }
     console.log("[INFO] Chosen bg: " + bg)
+
+    // menu
+    setMenu(localStorage.getItem("menu"))
+    if (menu === null) {
+        setMenu("main")
+        localStorage.setItem("menu", "main")
+    }
+    console.log("[INFO] Menu: " + menu)
+
+    // menu
+    setBGColor(localStorage.getItem("color"))
+    if (bgColor === null) {
+        localStorage.setItem("color", "#5e5e5e")
+    }
+    console.log("[INFO] Menu: " + menu)
 }
 
 export function RefreshStorage(){
     localStorage.setItem("bg", bg)
+    localStorage.setItem("menu", menu)
+    localStorage.setItem("color", bgColor)
 }

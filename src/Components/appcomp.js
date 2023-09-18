@@ -8,17 +8,20 @@ import { IconButton } from "../Buttons/IconButton"
 import VideoBackground from "../Background/Backdorund"
 import bg1 from "../Background/bg1.mp4"
 import bg2 from "../Background/bg2.mp4"
-import { bg } from "../variables/str"
+import { bg, bgColor, openMenu } from "../variables/str"
 
 export function Laptop(){
 
     const backgrondVideos = {lava_ball:bg1, water:bg2}
     const choosen = backgrondVideos[bg]
 
+    if (bg === "solid_color") document.body.style.backgroundColor = bgColor
+    else document.body.style.backgroundColor = "#000000"
     return(
         <div>
-            <IconButton icon={faGear} top={5} left={5} click={() => window.location.href = "/Startup-Page/settings"}/>
+            <IconButton icon={faGear} top={5} left={5} click={() => openMenu("settings")}/>
             <VideoBackground bg={choosen}/>
+
             
             <div style={{display:"flex", flexDirection:"column", ...centering}}>
                 <SearchBar iColor="#4285F4" top={50} width={500} placeholder="Google suche..."/>
