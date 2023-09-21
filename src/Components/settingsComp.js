@@ -7,6 +7,9 @@ import { centering } from "../Styles/Look";
 import { defaultHeight } from "../variables/int";
 import { openMenu } from "../variables/str";
 import { BGOptionButton } from "./RadioButton";
+import { BookMarkSettingsList } from "./BookMarksSetiingsComp";
+import { bookMarks } from "../variables/dictionary";
+import { AddBookMark } from "./adBookMarkComp";
 
 export function LaptopSettings(){
 
@@ -18,6 +21,17 @@ export function LaptopSettings(){
                     <Headline text="Background" width={"100%"} top={30} borderRadius={20} height={defaultHeight + 5}/>
                 </div>
                 <BGOptionButton/>
+            </div>
+            <div style={{position:"relative", top:80}}>
+                <div style={centering}>
+                    <Headline text="Bookmarks" width={"100%"} top={30} borderRadius={20} height={defaultHeight + 5}/>
+                </div>
+                <div style={{position:"relative", top:40}}>
+                    {bookMarks.map((element, index) => (
+                        <BookMarkSettingsList url={element.url} text={element.name} index={index}key={index}/>
+                    ))}
+                    <AddBookMark/>
+                </div>
             </div>
         </div>
     )

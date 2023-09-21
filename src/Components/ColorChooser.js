@@ -4,7 +4,6 @@ import { bgColor, setBGColor } from "../variables/str";
 
 export function ColorPicker(props){
     const [value, setValue] = useState(bgColor)
-    console.log(value)
 
     setBGColor(value)
 

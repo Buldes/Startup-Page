@@ -12,5 +12,7 @@ export function DefaultButton(props){
                     top:props.top, left:props.left, position: "relative", 
                     fontSize:fontSize,
                     display: "flex",
+                    marginLeft:props.marginLeft,
+                    marginRight:props.marginRight,
                      ...styleTypB}}>{props.text}</button>
 }
