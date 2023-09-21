@@ -12,10 +12,25 @@ Please be aware that the loading time of the Startup Page may vary depending on 
 
 ## Future Plans
 I have big plans in store to make this startup page even better:
-1. **Custom Bookmarks**: Personalize your bookmarks for a tailored experience.
-2. **More Backgrounds**: Diversify your visual experience with a wider range of backgrounds.
-3. **Settings**: Customize the page to suit your preferences.
-4. **Solid Color Background**: For those who prefer a clean and simple look.
-5. **[Add your idea here]**: I am open to your suggestions!
+1. **More Backgrounds**: Diversify your visual experience with a wider range of backgrounds.
+2. **Settings**: Customize the page to suit your preferences.
+3. **[Add your idea here]**: I am open to your suggestions!
 
 Stay tuned for updates as I continue to improve and expand the features of this startup page. Thank you for choosing me as your homepage!
+
+## Images
+
+### The Main Menu Background Variantes
+
+**Nice** Lava Ball
+![Error](images/Main_Menu_lava_ball.png)
+
+**Smooth** Water
+![Error](images/Main_Menu_Water.png)
+
+**Custom** Colors
+![Error](images/Main_Menu_Solid.png)
+
+### The Settings Menu
+![Error](images/Settings_Menu.png)
+
