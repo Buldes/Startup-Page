@@ -3,9 +3,10 @@ import { IconButton } from "../Buttons/IconButton";
 import { DefaultInputField } from "../InputField/defaultInputField";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { bgColor4e } from "../Styles/backGroundColor";
+import { searchBarColor } from "../variables/str";
 
 export function SearchBar(props){
-    const {width=400, height=35, bgColor=bgColor4e, borderRadius=5, icon=faGoogle, iColor="white",
+    const {width=400, height=35, bgColor=searchBarColor, borderRadius=5, icon=faGoogle, iColor="white",
            seacrhLink="https://www.google.com/search?q="} = props
 
 
@@ -23,9 +24,9 @@ export function SearchBar(props){
         <div style={{width:width, height:height, backgroundColor:bgColor, position: "relative", top:props.top, 
                      left:props.left, justifyContent:"flex-start", display:"flex", borderRadius:borderRadius}}>
                         
-            <IconButton icon={icon} bgColor={bgColor4e} size="xl" width={30} color={iColor} top={4} left={4}/>
+            <IconButton icon={icon} bgColor={bgColor4e + "00"} size="xl" width={30} color={iColor} top={4} left={4}/>
             <DefaultInputField inputRef={inputRef} handleKeyDown={handleKeyDown} height={height -2} width={width - 36} 
-                              bgColor={bgColor} placeholder={props.placeholder} left={6}/>
+                              bgColor={bgColor4e + "00"} placeholder={props.placeholder} left={6}/>
         </div>
     )
 }

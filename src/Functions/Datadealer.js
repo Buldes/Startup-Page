@@ -1,7 +1,8 @@
 import { bookMarks, setBookMarks } from "../variables/dictionary";
-import { setBGValue, bg, setMenu, menu, bgColor, setBGColor } from "../variables/str";
+import { setBGValue, bg, setMenu, menu, bgColor, setBGColor, setBookMarkColor, bookMarkColor, setSearchBarColor, searchBarColor } from "../variables/str";
 
 export function RefreshVariable(){
+    console.clear()
     // BGValue
     setBGValue(localStorage.getItem("bg"))
     if (bg === null) {
@@ -36,7 +37,23 @@ export function RefreshVariable(){
                       { name: 'ChatGPT', url: 'https://chat.openai.com' }])
         localStorage.setItem("bookMarks", JSON.stringify(bookMarks))
     }
-    console.log("[INFO] book-marks: " + bookMarks)
+    
+    //bookMark Color
+    setBookMarkColor(localStorage.getItem("bookMarkColor"))
+    if (bookMarkColor === null){
+        setBookMarkColor("#4e4e4edd")
+        localStorage.setItem("bookMarkColor", "#4e4e4edd")
+    }
+    console.log("[INFO] Book-Mark-Color: " + bookMarkColor)
+
+    //searchBar Color
+    setSearchBarColor(localStorage.getItem("searchBarColor"))
+    if (searchBarColor === null){
+        setSearchBarColor("#4e4e4edd")
+        localStorage.setItem("searchBarColor", "#4e4e4edd")
+    }
+    console.log("[INFO] Search-Bar-Color: " + searchBarColor)
+
 }
 
 export function RefreshStorage(){
@@ -44,4 +61,6 @@ export function RefreshStorage(){
     localStorage.setItem("menu", menu)
     localStorage.setItem("color", bgColor)
     localStorage.setItem("bookMarks", JSON.stringify(bookMarks))
+    localStorage.setItem("bookMarkColor", bookMarkColor)
+    localStorage.setItem("searchBarColor", searchBarColor)
 }

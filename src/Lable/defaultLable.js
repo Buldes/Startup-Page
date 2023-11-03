@@ -16,5 +16,6 @@ export function DefaultLable(props){
         textAlign:props.textAlign,
         marginLeft:marginLeft,
         marginRight:marginRight,
+        opacity:props.opacity,
         display:"flex", ...styleTypL}} >{props.text}</label>
 }

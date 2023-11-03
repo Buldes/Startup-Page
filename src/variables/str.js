@@ -24,3 +24,15 @@ export var bgColor = bgColor5e;
 export const setBGColor = (value) =>{
     bgColor = value
 }
+
+export var bookMarkColor = "#4e4e4eaa";
+
+export const setBookMarkColor = (value) =>{
+    bookMarkColor = value
+}
+
+export var searchBarColor = "#4e4e4eff";
+
+export const setSearchBarColor = (value) =>{
+    searchBarColor = value
+}
