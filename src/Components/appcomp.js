@@ -7,12 +7,14 @@ import { IconButton } from "../Buttons/IconButton"
 import VideoBackground from "../Background/Backdorund"
 import bg1 from "../Background/bg1.mp4"
 import bg2 from "../Background/bg2.mp4"
+import bg3 from "../Background/bg3.mp4"
+import bg4 from "../Background/bg4.mp4"
 import { bg, bgColor, openMenu } from "../variables/str"
 import { BokMarkComp } from "./bookMarkComp"
 
 export function Laptop(){
 
-    const backgrondVideos = {lava_ball:bg1, water:bg2}
+    const backgrondVideos = {lava_ball:bg1, water:bg2, lines:bg3, ceiling_flames:bg4}
     const choosen = backgrondVideos[bg]
 
     if (bg === "solid_color") document.body.style.backgroundColor = bgColor

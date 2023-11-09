@@ -15,7 +15,7 @@ import { OpaticityAndColor } from "./OpaticityAndColorChanger";
 export function LaptopSettings(){
 
     return (
-        <div style={{width:"100%", height:1500, backgroundColor:bgColor1f}}>
+        <div style={{width:"100%", height:2000, backgroundColor:bgColor1f}}>
             <IconButton icon={faRightToBracket} top={5} left={5} click={() => openMenu("main")}/>
 
             <div>
@@ -37,13 +37,13 @@ export function LaptopSettings(){
                 </div>
             </div>
 
-            <div style={{position:"relative", top:160}}>
+            <div style={{position:"relative", top:160}}>{/*
                 <div style={centering}>
-                    <Headline text="Opacity" width={"100%"} top={30} borderRadius={20} height={defaultHeight + 5}/>
+                    <Headline text="Opacity & Color" width={"100%"} top={30} borderRadius={20} height={defaultHeight + 5}/>
                 </div>
                 <div style={{position:"relative", top:40}}>
                     <OpaticityAndColor/>
-                </div>
+                </div>*/}
             </div>
         </div>
     )

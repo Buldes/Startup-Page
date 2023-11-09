@@ -26,8 +26,8 @@ export function AddBookMark(props){
                     }}></img>
             </div>
 
-            <DefaultInputField border="1px solid black" width={398}  onChange={(e) => setName(e.target.value)} add={{marginLeft:"calc(2% - 1px)", textAlign:"center"}}/>
-            <DefaultInputField border="1px solid black" width={700} onChange={(e) => setUrl(e.target.value)} add={{marginLeft:"calc(1% - 10px)", textAlign:"center"}}/>
+            <DefaultInputField border="1px solid black" width={398}  onChange={(e) => setName(e.target.value)} add={{marginLeft:"calc(2% - 1px)", textAlign:"center"}} placeholder="[Name here]"/>
+            <DefaultInputField border="1px solid black" width={700} onChange={(e) => setUrl(e.target.value)} add={{marginLeft:"calc(1% - 10px)", textAlign:"center"}} placeholder="[URL here. Note: don't forget 'https://']"/>
         
             <AddButton text=" + Add" marginRight={15} marginLeft={40} click={(e) => manualAddBookMark({name:name, url:url})}/>
         </div>
