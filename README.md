@@ -9,6 +9,7 @@ Please be aware that the loading time of the Startup Page may vary depending on 
 1. **Video Background**: Enjoy a dynamic background experience.
 2. **Google and YouTube Search**: Conveniently search the web and videos.
 3. **Bookmarks**: Easily save your favorite web pages for quick access.
+4. **Color and Opacity**: Customize the Color and Opacity by youre own for the serachbar and youre bookmarks.
 
 ## Future Plans
 I have big plans in store to make this startup page even better:
@@ -31,6 +32,9 @@ Stay tuned for updates as I continue to improve and expand the features of this 
 **Custom** Colors
 ![Error](images/Main_Menu_Solid.png)
 
+and **more**...
+
 ### The Settings Menu
 ![Error](images/Settings_Menu.png)
 
+![Error](images/Settings_Menu2.png)
