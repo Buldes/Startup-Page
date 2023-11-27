@@ -29,12 +29,14 @@ Stay tuned for updates as I continue to improve and expand the features of this 
 **Smooth** Water
 ![Error](images/Main_Menu_Water.png)
 
-**Custom** Colors
-![Error](images/Main_Menu_Solid.png)
+**Gaming** Background
+![Error](images/Main_Menu_Gaming5.png)
+
+![Error](images/Main_Menu_Gaming2.png)
 
 and **more**...
 
 ### The Settings Menu
-![Error](images/Settings_Menu.png)
-
+![Error](images/Settings_Menu0.png)
+![Error](images/Settings_Menu1.png)
 ![Error](images/Settings_Menu2.png)
